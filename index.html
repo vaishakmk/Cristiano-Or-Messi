@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="script.js"></script>
+
+    <style>
+        #dialog {
+        display: none;
+        width: 1000px;
+    }
+    </style>
+
+</head>
+
+<body>
+    <div data-role="page" id="page1">
+        <div data-role="header">
+            <h2>LM10/CR7</h2>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <p>Let's see if ur a Messi person or Cristiano person</p>
+            <a href="#page2" >Start Survey</a>
+        </div>
+
+        <div data-role="footer">
+            <h2>Pet Store Inc. 2021</h2>
+        </div>
+    </div>
+
+    <div data-role="page" id="page12">
+        <div data-role="header">
+            <h2>Results</h2>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <div>
+                <div>Your responses are as follows:</div>
+                <table>
+                    <thead>
+                        <th>Question</th>
+                        <th>Your response</th>
+                    </thead>
+                    <tbody id="results">
+
+                    </tbody>
+                </table>
+
+            </div>
+            <a href="#page1" data-transition="turn">Back to home page</a>
+        </div>
+
+        <div data-role="footer">
+            <h2>FIFA 2022 Inc.</h2>
+        </div>
+    </div>
+
+</body>
+
+</html>
